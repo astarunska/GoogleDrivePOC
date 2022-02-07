@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DemoGoogleDriveSDK" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ltJ-Mm-NRT">
+                                <rect key="frame" x="50" y="104" width="314" height="658"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Edy-40-FZT">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="84.5"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Login with Google">
+                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="21"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="loginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ixV-Lr-yFW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vWo-0b-Wyd">
+                                        <rect key="frame" x="0.0" y="114.5" width="314" height="85"/>
+                                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Create folder">
+                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="21"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="createAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hrl-dt-dfD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ttw-9j-eCR">
+                                        <rect key="frame" x="0.0" y="229.5" width="314" height="84.5"/>
+                                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Save file">
+                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="21"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="saveAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pkc-RA-Z4f"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Gc-gu-Z0v">
+                                        <rect key="frame" x="0.0" y="344" width="314" height="84.5"/>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Delete file">
+                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="21"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="deleteAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rIK-1v-FmT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n0q-OM-ArQ">
+                                        <rect key="frame" x="0.0" y="458.5" width="314" height="85"/>
+                                        <color key="backgroundColor" systemColor="separatorColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="List of files">
+                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="21"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="listAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5uG-KI-rPN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k0U-YL-Jma">
+                                        <rect key="frame" x="0.0" y="573.5" width="314" height="84.5"/>
+                                        <color key="backgroundColor" systemColor="separatorColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Download">
+                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="21"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="downloadAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kt9-zC-gcA"/>
+                                            <action selector="listAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hdc-nm-ZJW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Edy-40-FZT" firstAttribute="centerX" secondItem="ltJ-Mm-NRT" secondAttribute="centerX" id="xjp-uv-0sH"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ltJ-Mm-NRT" secondAttribute="bottom" constant="100" id="0sY-sW-4Kn"/>
+                            <constraint firstItem="ltJ-Mm-NRT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="Pmy-QG-5uh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ltJ-Mm-NRT" secondAttribute="trailing" constant="50" id="ccS-hg-6yJ"/>
+                            <constraint firstItem="ltJ-Mm-NRT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="spL-JF-b0s"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="createFolderButton" destination="vWo-0b-Wyd" id="ugx-vM-T0Q"/>
+                        <outlet property="deleteButton" destination="5Gc-gu-Z0v" id="5SH-fN-WBr"/>
+                        <outlet property="loginButton" destination="Edy-40-FZT" id="LGQ-Gy-qbh"/>
+                        <outlet property="saveButton" destination="Ttw-9j-eCR" id="hui-nD-x0u"/>
+                        <outlet property="showListButton" destination="n0q-OM-ArQ" id="YNv-jM-23r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="98"/>
+        </scene>
+        <!--Details View Controller-->
+        <scene sceneID="sgf-8q-KCl">
+            <objects>
+                <viewController storyboardIdentifier="DetailsViewController" id="tJe-7m-OuK" customClass="DetailsViewController" customModule="DemoGoogleDriveSDK" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7f4-Su-96f">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9li-8D-Mnq">
+                                <rect key="frame" x="20" y="96" width="374" height="766"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSt-zu-FLf">
+                                <rect key="frame" x="20" y="44" width="374" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="8DD-8p-4fc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YyT-Uy-n57"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NSt-zu-FLf" firstAttribute="leading" secondItem="YyT-Uy-n57" secondAttribute="leading" constant="20" id="9my-TP-09P"/>
+                            <constraint firstItem="9li-8D-Mnq" firstAttribute="leading" secondItem="YyT-Uy-n57" secondAttribute="leading" constant="20" id="NMw-EU-Gnn"/>
+                            <constraint firstItem="9li-8D-Mnq" firstAttribute="top" secondItem="NSt-zu-FLf" secondAttribute="bottom" constant="8" id="eSs-KK-SAo"/>
+                            <constraint firstItem="YyT-Uy-n57" firstAttribute="trailing" secondItem="NSt-zu-FLf" secondAttribute="trailing" constant="20" id="mrk-lc-JbW"/>
+                            <constraint firstItem="YyT-Uy-n57" firstAttribute="trailing" secondItem="9li-8D-Mnq" secondAttribute="trailing" constant="20" id="sSG-z9-zvm"/>
+                            <constraint firstItem="NSt-zu-FLf" firstAttribute="top" secondItem="YyT-Uy-n57" secondAttribute="top" id="sex-Uu-NGy"/>
+                            <constraint firstItem="YyT-Uy-n57" firstAttribute="bottom" secondItem="9li-8D-Mnq" secondAttribute="bottom" id="sss-de-y4m"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="9li-8D-Mnq" id="EIl-cE-bLm"/>
+                        <outlet property="titleLabel" destination="NSt-zu-FLf" id="55j-Do-hVJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hSy-MI-lt4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="747.82608695652175" y="105.80357142857143"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="separatorColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

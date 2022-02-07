@@ -1,0 +1,781 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06701E6400D3007DEC34EA69 /* Pods_DemoGoogleDriveSDKTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF38AA0F83FF4531CCCAD7EA /* Pods_DemoGoogleDriveSDKTests.framework */; };
+		4BBD8CB527AD2EC400011528 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBD8CB427AD2EC400011528 /* AppDelegate.swift */; };
+		4BBD8CB727AD2EC400011528 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBD8CB627AD2EC400011528 /* SceneDelegate.swift */; };
+		4BBD8CB927AD2EC400011528 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBD8CB827AD2EC400011528 /* ViewController.swift */; };
+		4BBD8CBC27AD2EC400011528 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BBD8CBA27AD2EC400011528 /* Main.storyboard */; };
+		4BBD8CBE27AD2EC700011528 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BBD8CBD27AD2EC700011528 /* Assets.xcassets */; };
+		4BBD8CC127AD2EC700011528 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BBD8CBF27AD2EC700011528 /* LaunchScreen.storyboard */; };
+		4BBD8CCC27AD2EC800011528 /* DemoGoogleDriveSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBD8CCB27AD2EC800011528 /* DemoGoogleDriveSDKTests.swift */; };
+		4BBD8CD627AD2EC800011528 /* DemoGoogleDriveSDKUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBD8CD527AD2EC800011528 /* DemoGoogleDriveSDKUITests.swift */; };
+		4BBD8CD827AD2EC800011528 /* DemoGoogleDriveSDKUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBD8CD727AD2EC800011528 /* DemoGoogleDriveSDKUITestsLaunchTests.swift */; };
+		4BBD8CEC27B05A8500011528 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBD8CEB27B05A8500011528 /* Services.swift */; };
+		4BBDCBA427B12BFA00DAB85B /* test_file123.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4BBDCBA327B12BF900DAB85B /* test_file123.rtf */; };
+		4BBDCBA627B1334800DAB85B /* client_240237140694-43tdjn92novddbhuggn91sd717op04np.apps.googleusercontent.com.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4BBDCBA527B1334700DAB85B /* client_240237140694-43tdjn92novddbhuggn91sd717op04np.apps.googleusercontent.com.plist */; };
+		4BBDCBA827B13F1500DAB85B /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBDCBA727B13F1500DAB85B /* DetailsViewController.swift */; };
+		B78185D2621EBCF08195977A /* Pods_DemoGoogleDriveSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EAA6E05BDAB696C6186F3D6 /* Pods_DemoGoogleDriveSDK.framework */; };
+		EE3D4252869F665788B91E14 /* Pods_DemoGoogleDriveSDK_DemoGoogleDriveSDKUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15D6AA71405C882D139A36B0 /* Pods_DemoGoogleDriveSDK_DemoGoogleDriveSDKUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4BBD8CC827AD2EC800011528 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BBD8CA927AD2EC400011528 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BBD8CB027AD2EC400011528;
+			remoteInfo = DemoGoogleDriveSDK;
+		};
+		4BBD8CD227AD2EC800011528 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BBD8CA927AD2EC400011528 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BBD8CB027AD2EC400011528;
+			remoteInfo = DemoGoogleDriveSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		017A25DFAE380BF9981C69BA /* Pods-DemoGoogleDriveSDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoGoogleDriveSDKTests.debug.xcconfig"; path = "Target Support Files/Pods-DemoGoogleDriveSDKTests/Pods-DemoGoogleDriveSDKTests.debug.xcconfig"; sourceTree = "<group>"; };
+		15D6AA71405C882D139A36B0 /* Pods_DemoGoogleDriveSDK_DemoGoogleDriveSDKUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoGoogleDriveSDK_DemoGoogleDriveSDKUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		450080926F809A59570F34BA /* Pods-DemoGoogleDriveSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoGoogleDriveSDK.release.xcconfig"; path = "Target Support Files/Pods-DemoGoogleDriveSDK/Pods-DemoGoogleDriveSDK.release.xcconfig"; sourceTree = "<group>"; };
+		4BBD8CB127AD2EC400011528 /* DemoGoogleDriveSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoGoogleDriveSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BBD8CB427AD2EC400011528 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4BBD8CB627AD2EC400011528 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4BBD8CB827AD2EC400011528 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4BBD8CBB27AD2EC400011528 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4BBD8CBD27AD2EC700011528 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4BBD8CC027AD2EC700011528 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4BBD8CC227AD2EC700011528 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BBD8CC727AD2EC800011528 /* DemoGoogleDriveSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoGoogleDriveSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BBD8CCB27AD2EC800011528 /* DemoGoogleDriveSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoGoogleDriveSDKTests.swift; sourceTree = "<group>"; };
+		4BBD8CD127AD2EC800011528 /* DemoGoogleDriveSDKUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoGoogleDriveSDKUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BBD8CD527AD2EC800011528 /* DemoGoogleDriveSDKUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoGoogleDriveSDKUITests.swift; sourceTree = "<group>"; };
+		4BBD8CD727AD2EC800011528 /* DemoGoogleDriveSDKUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoGoogleDriveSDKUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4BBD8CEB27B05A8500011528 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		4BBDCBA327B12BF900DAB85B /* test_file123.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = test_file123.rtf; sourceTree = "<group>"; };
+		4BBDCBA527B1334700DAB85B /* client_240237140694-43tdjn92novddbhuggn91sd717op04np.apps.googleusercontent.com.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "client_240237140694-43tdjn92novddbhuggn91sd717op04np.apps.googleusercontent.com.plist"; sourceTree = "<group>"; };
+		4BBDCBA727B13F1500DAB85B /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		6553AF245B564F6B2989B9F3 /* Pods-DemoGoogleDriveSDKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoGoogleDriveSDKTests.release.xcconfig"; path = "Target Support Files/Pods-DemoGoogleDriveSDKTests/Pods-DemoGoogleDriveSDKTests.release.xcconfig"; sourceTree = "<group>"; };
+		6EAA6E05BDAB696C6186F3D6 /* Pods_DemoGoogleDriveSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoGoogleDriveSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7105381B13C06C783C7AB4E1 /* Pods-DemoGoogleDriveSDK-DemoGoogleDriveSDKUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoGoogleDriveSDK-DemoGoogleDriveSDKUITests.release.xcconfig"; path = "Target Support Files/Pods-DemoGoogleDriveSDK-DemoGoogleDriveSDKUITests/Pods-DemoGoogleDriveSDK-DemoGoogleDriveSDKUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AF38AA0F83FF4531CCCAD7EA /* Pods_DemoGoogleDriveSDKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoGoogleDriveSDKTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDDEB1A5906135646B8CCCE4 /* Pods-DemoGoogleDriveSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoGoogleDriveSDK.debug.xcconfig"; path = "Target Support Files/Pods-DemoGoogleDriveSDK/Pods-DemoGoogleDriveSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		D00A300B63495700E828587B /* Pods-DemoGoogleDriveSDK-DemoGoogleDriveSDKUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoGoogleDriveSDK-DemoGoogleDriveSDKUITests.debug.xcconfig"; path = "Target Support Files/Pods-DemoGoogleDriveSDK-DemoGoogleDriveSDKUITests/Pods-DemoGoogleDriveSDK-DemoGoogleDriveSDKUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4BBD8CAE27AD2EC400011528 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B78185D2621EBCF08195977A /* Pods_DemoGoogleDriveSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BBD8CC427AD2EC800011528 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06701E6400D3007DEC34EA69 /* Pods_DemoGoogleDriveSDKTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BBD8CCE27AD2EC800011528 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE3D4252869F665788B91E14 /* Pods_DemoGoogleDriveSDK_DemoGoogleDriveSDKUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E7C1B8748DB1B4FB2AFE721 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CDDEB1A5906135646B8CCCE4 /* Pods-DemoGoogleDriveSDK.debug.xcconfig */,
+				450080926F809A59570F34BA /* Pods-DemoGoogleDriveSDK.release.xcconfig */,
+				D00A300B63495700E828587B /* Pods-DemoGoogleDriveSDK-DemoGoogleDriveSDKUITests.debug.xcconfig */,
+				7105381B13C06C783C7AB4E1 /* Pods-DemoGoogleDriveSDK-DemoGoogleDriveSDKUITests.release.xcconfig */,
+				017A25DFAE380BF9981C69BA /* Pods-DemoGoogleDriveSDKTests.debug.xcconfig */,
+				6553AF245B564F6B2989B9F3 /* Pods-DemoGoogleDriveSDKTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		294D191F3CBA2ED9CE29D418 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6EAA6E05BDAB696C6186F3D6 /* Pods_DemoGoogleDriveSDK.framework */,
+				15D6AA71405C882D139A36B0 /* Pods_DemoGoogleDriveSDK_DemoGoogleDriveSDKUITests.framework */,
+				AF38AA0F83FF4531CCCAD7EA /* Pods_DemoGoogleDriveSDKTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4BBD8CA827AD2EC400011528 = {
+			isa = PBXGroup;
+			children = (
+				4BBD8CB327AD2EC400011528 /* DemoGoogleDriveSDK */,
+				4BBD8CCA27AD2EC800011528 /* DemoGoogleDriveSDKTests */,
+				4BBD8CD427AD2EC800011528 /* DemoGoogleDriveSDKUITests */,
+				4BBD8CB227AD2EC400011528 /* Products */,
+				0E7C1B8748DB1B4FB2AFE721 /* Pods */,
+				294D191F3CBA2ED9CE29D418 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4BBD8CB227AD2EC400011528 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4BBD8CB127AD2EC400011528 /* DemoGoogleDriveSDK.app */,
+				4BBD8CC727AD2EC800011528 /* DemoGoogleDriveSDKTests.xctest */,
+				4BBD8CD127AD2EC800011528 /* DemoGoogleDriveSDKUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4BBD8CB327AD2EC400011528 /* DemoGoogleDriveSDK */ = {
+			isa = PBXGroup;
+			children = (
+				4BBD8CB427AD2EC400011528 /* AppDelegate.swift */,
+				4BBD8CB627AD2EC400011528 /* SceneDelegate.swift */,
+				4BBD8CB827AD2EC400011528 /* ViewController.swift */,
+				4BBDCBA727B13F1500DAB85B /* DetailsViewController.swift */,
+				4BBD8CEB27B05A8500011528 /* Services.swift */,
+				4BBD8CBA27AD2EC400011528 /* Main.storyboard */,
+				4BBD8CBD27AD2EC700011528 /* Assets.xcassets */,
+				4BBD8CBF27AD2EC700011528 /* LaunchScreen.storyboard */,
+				4BBD8CC227AD2EC700011528 /* Info.plist */,
+				4BBDCBA327B12BF900DAB85B /* test_file123.rtf */,
+				4BBDCBA527B1334700DAB85B /* client_240237140694-43tdjn92novddbhuggn91sd717op04np.apps.googleusercontent.com.plist */,
+			);
+			path = DemoGoogleDriveSDK;
+			sourceTree = "<group>";
+		};
+		4BBD8CCA27AD2EC800011528 /* DemoGoogleDriveSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				4BBD8CCB27AD2EC800011528 /* DemoGoogleDriveSDKTests.swift */,
+			);
+			path = DemoGoogleDriveSDKTests;
+			sourceTree = "<group>";
+		};
+		4BBD8CD427AD2EC800011528 /* DemoGoogleDriveSDKUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4BBD8CD527AD2EC800011528 /* DemoGoogleDriveSDKUITests.swift */,
+				4BBD8CD727AD2EC800011528 /* DemoGoogleDriveSDKUITestsLaunchTests.swift */,
+			);
+			path = DemoGoogleDriveSDKUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4BBD8CB027AD2EC400011528 /* DemoGoogleDriveSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BBD8CDB27AD2EC800011528 /* Build configuration list for PBXNativeTarget "DemoGoogleDriveSDK" */;
+			buildPhases = (
+				C9136A0E3854A449931C8E1F /* [CP] Check Pods Manifest.lock */,
+				4BBD8CAD27AD2EC400011528 /* Sources */,
+				4BBD8CAE27AD2EC400011528 /* Frameworks */,
+				4BBD8CAF27AD2EC400011528 /* Resources */,
+				56FDFEB4154C648B86E7CBE9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DemoGoogleDriveSDK;
+			packageProductDependencies = (
+			);
+			productName = DemoGoogleDriveSDK;
+			productReference = 4BBD8CB127AD2EC400011528 /* DemoGoogleDriveSDK.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4BBD8CC627AD2EC800011528 /* DemoGoogleDriveSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BBD8CDE27AD2EC800011528 /* Build configuration list for PBXNativeTarget "DemoGoogleDriveSDKTests" */;
+			buildPhases = (
+				D9D3700608BDE46A831C5A90 /* [CP] Check Pods Manifest.lock */,
+				4BBD8CC327AD2EC800011528 /* Sources */,
+				4BBD8CC427AD2EC800011528 /* Frameworks */,
+				4BBD8CC527AD2EC800011528 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4BBD8CC927AD2EC800011528 /* PBXTargetDependency */,
+			);
+			name = DemoGoogleDriveSDKTests;
+			productName = DemoGoogleDriveSDKTests;
+			productReference = 4BBD8CC727AD2EC800011528 /* DemoGoogleDriveSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4BBD8CD027AD2EC800011528 /* DemoGoogleDriveSDKUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BBD8CE127AD2EC800011528 /* Build configuration list for PBXNativeTarget "DemoGoogleDriveSDKUITests" */;
+			buildPhases = (
+				13331B059D5872CDEF3E3D84 /* [CP] Check Pods Manifest.lock */,
+				4BBD8CCD27AD2EC800011528 /* Sources */,
+				4BBD8CCE27AD2EC800011528 /* Frameworks */,
+				4BBD8CCF27AD2EC800011528 /* Resources */,
+				DB20979922EC50C96CEE1720 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4BBD8CD327AD2EC800011528 /* PBXTargetDependency */,
+			);
+			name = DemoGoogleDriveSDKUITests;
+			productName = DemoGoogleDriveSDKUITests;
+			productReference = 4BBD8CD127AD2EC800011528 /* DemoGoogleDriveSDKUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4BBD8CA927AD2EC400011528 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					4BBD8CB027AD2EC400011528 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					4BBD8CC627AD2EC800011528 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 4BBD8CB027AD2EC400011528;
+					};
+					4BBD8CD027AD2EC800011528 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 4BBD8CB027AD2EC400011528;
+					};
+				};
+			};
+			buildConfigurationList = 4BBD8CAC27AD2EC400011528 /* Build configuration list for PBXProject "DemoGoogleDriveSDK" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4BBD8CA827AD2EC400011528;
+			packageReferences = (
+			);
+			productRefGroup = 4BBD8CB227AD2EC400011528 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4BBD8CB027AD2EC400011528 /* DemoGoogleDriveSDK */,
+				4BBD8CC627AD2EC800011528 /* DemoGoogleDriveSDKTests */,
+				4BBD8CD027AD2EC800011528 /* DemoGoogleDriveSDKUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4BBD8CAF27AD2EC400011528 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BBD8CC127AD2EC700011528 /* LaunchScreen.storyboard in Resources */,
+				4BBDCBA627B1334800DAB85B /* client_240237140694-43tdjn92novddbhuggn91sd717op04np.apps.googleusercontent.com.plist in Resources */,
+				4BBD8CBE27AD2EC700011528 /* Assets.xcassets in Resources */,
+				4BBDCBA427B12BFA00DAB85B /* test_file123.rtf in Resources */,
+				4BBD8CBC27AD2EC400011528 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BBD8CC527AD2EC800011528 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BBD8CCF27AD2EC800011528 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13331B059D5872CDEF3E3D84 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DemoGoogleDriveSDK-DemoGoogleDriveSDKUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56FDFEB4154C648B86E7CBE9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DemoGoogleDriveSDK/Pods-DemoGoogleDriveSDK-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DemoGoogleDriveSDK/Pods-DemoGoogleDriveSDK-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DemoGoogleDriveSDK/Pods-DemoGoogleDriveSDK-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9136A0E3854A449931C8E1F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DemoGoogleDriveSDK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9D3700608BDE46A831C5A90 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DemoGoogleDriveSDKTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB20979922EC50C96CEE1720 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DemoGoogleDriveSDK-DemoGoogleDriveSDKUITests/Pods-DemoGoogleDriveSDK-DemoGoogleDriveSDKUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DemoGoogleDriveSDK-DemoGoogleDriveSDKUITests/Pods-DemoGoogleDriveSDK-DemoGoogleDriveSDKUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DemoGoogleDriveSDK-DemoGoogleDriveSDKUITests/Pods-DemoGoogleDriveSDK-DemoGoogleDriveSDKUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4BBD8CAD27AD2EC400011528 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BBD8CB927AD2EC400011528 /* ViewController.swift in Sources */,
+				4BBD8CEC27B05A8500011528 /* Services.swift in Sources */,
+				4BBD8CB527AD2EC400011528 /* AppDelegate.swift in Sources */,
+				4BBD8CB727AD2EC400011528 /* SceneDelegate.swift in Sources */,
+				4BBDCBA827B13F1500DAB85B /* DetailsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BBD8CC327AD2EC800011528 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BBD8CCC27AD2EC800011528 /* DemoGoogleDriveSDKTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BBD8CCD27AD2EC800011528 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BBD8CD827AD2EC800011528 /* DemoGoogleDriveSDKUITestsLaunchTests.swift in Sources */,
+				4BBD8CD627AD2EC800011528 /* DemoGoogleDriveSDKUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4BBD8CC927AD2EC800011528 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4BBD8CB027AD2EC400011528 /* DemoGoogleDriveSDK */;
+			targetProxy = 4BBD8CC827AD2EC800011528 /* PBXContainerItemProxy */;
+		};
+		4BBD8CD327AD2EC800011528 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4BBD8CB027AD2EC400011528 /* DemoGoogleDriveSDK */;
+			targetProxy = 4BBD8CD227AD2EC800011528 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4BBD8CBA27AD2EC400011528 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BBD8CBB27AD2EC400011528 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4BBD8CBF27AD2EC700011528 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BBD8CC027AD2EC700011528 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4BBD8CD927AD2EC800011528 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4BBD8CDA27AD2EC800011528 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4BBD8CDC27AD2EC800011528 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDDEB1A5906135646B8CCCE4 /* Pods-DemoGoogleDriveSDK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 98ZU92ADWZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DemoGoogleDriveSDK/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alionaStar.DemoGoogleDriveSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4BBD8CDD27AD2EC800011528 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 450080926F809A59570F34BA /* Pods-DemoGoogleDriveSDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 98ZU92ADWZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DemoGoogleDriveSDK/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alionaStar.DemoGoogleDriveSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4BBD8CDF27AD2EC800011528 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 017A25DFAE380BF9981C69BA /* Pods-DemoGoogleDriveSDKTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.readdle.DemoGoogleDriveSDK.DemoGoogleDriveSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DemoGoogleDriveSDK.app/DemoGoogleDriveSDK";
+			};
+			name = Debug;
+		};
+		4BBD8CE027AD2EC800011528 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6553AF245B564F6B2989B9F3 /* Pods-DemoGoogleDriveSDKTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.readdle.DemoGoogleDriveSDK.DemoGoogleDriveSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DemoGoogleDriveSDK.app/DemoGoogleDriveSDK";
+			};
+			name = Release;
+		};
+		4BBD8CE227AD2EC800011528 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D00A300B63495700E828587B /* Pods-DemoGoogleDriveSDK-DemoGoogleDriveSDKUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.readdle.DemoGoogleDriveSDK.DemoGoogleDriveSDKUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DemoGoogleDriveSDK;
+			};
+			name = Debug;
+		};
+		4BBD8CE327AD2EC800011528 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7105381B13C06C783C7AB4E1 /* Pods-DemoGoogleDriveSDK-DemoGoogleDriveSDKUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.readdle.DemoGoogleDriveSDK.DemoGoogleDriveSDKUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DemoGoogleDriveSDK;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4BBD8CAC27AD2EC400011528 /* Build configuration list for PBXProject "DemoGoogleDriveSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BBD8CD927AD2EC800011528 /* Debug */,
+				4BBD8CDA27AD2EC800011528 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BBD8CDB27AD2EC800011528 /* Build configuration list for PBXNativeTarget "DemoGoogleDriveSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BBD8CDC27AD2EC800011528 /* Debug */,
+				4BBD8CDD27AD2EC800011528 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BBD8CDE27AD2EC800011528 /* Build configuration list for PBXNativeTarget "DemoGoogleDriveSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BBD8CDF27AD2EC800011528 /* Debug */,
+				4BBD8CE027AD2EC800011528 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BBD8CE127AD2EC800011528 /* Build configuration list for PBXNativeTarget "DemoGoogleDriveSDKUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BBD8CE227AD2EC800011528 /* Debug */,
+				4BBD8CE327AD2EC800011528 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4BBD8CA927AD2EC400011528 /* Project object */;
+}
