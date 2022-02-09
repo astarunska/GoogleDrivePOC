@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction private func createAction(_ sender: Any) {
-        service.createFolder(name: "Readdle Calendar") { [weak self] error in
+        service.createFolder(name: "Calendars Attachments") { [weak self] error in
             self?.show(error: error)
         }
     }
@@ -46,9 +46,9 @@ class ViewController: UIViewController {
             return
         }
         
-        service.save(file: file.description,
+        service.save(file: "TestFile",
                      data: file,
-                     MIMEType: "rtf",
+                     MIMEType: "application/vnd.google-apps.folder",
                      completion: { [weak self] error in
             self?.show(error: error)
         })
