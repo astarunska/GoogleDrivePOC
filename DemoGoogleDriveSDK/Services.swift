@@ -17,8 +17,9 @@ typealias ErrorHandler = (GoogleError?) -> Void
 protocol GDriveService {
     var isSignedIn: Bool { get }
     func signIn(host: UIViewController, completion: @escaping SignInCompletion)
-    func createFolder(name: String, completion: @escaping ErrorHandler)
+    //    func createFolder(name: String, completion: @escaping ErrorHandler)
     func getFilesList(completion: @escaping MetaDataCompletion)
+    func createFolderIfNeeded(folderName: String, completion: @escaping MetaDataCompletion)
     func save(file: String, data: Data, MIMEType: String, completion: @escaping ErrorHandler)
     func delete(file: GTLRDrive_File, completion: @escaping ErrorHandler)
     func download(file: GTLRDrive_File, completion: @escaping FileDownloadCompletion)
@@ -28,6 +29,7 @@ class DefaultGDriveService {
     
     private var service: GTLRDriveService
     private let folderName = "Calendars Attachments"
+    private var folderID = ""
     
     init(service: GTLRDriveService) {
         self.service = service
@@ -43,7 +45,6 @@ extension DefaultGDriveService: GDriveService {
     
     func signIn(host: UIViewController, completion: @escaping SignInCompletion) {
         GIDSignIn.sharedInstance.signIn(with: .init(clientID: .clientID), presenting: host) { [weak self] user, error in
-//            completion(user, error.map { GoogleError.failure($0.localizedDescription) })
             guard let self = self else { return }
             
             if let error = error {
@@ -77,7 +78,6 @@ extension DefaultGDriveService: GDriveService {
     }
     
     func createGoogleDriveService(user: GIDGoogleUser) {
-        
         service.authorizer = user.authentication.fetcherAuthorizer()
         
         user.authentication.do { authentication, error in
@@ -89,25 +89,6 @@ extension DefaultGDriveService: GDriveService {
         }
     }
     
-    func createFolder(name: String, completion: @escaping ErrorHandler) {
-        guard isSignedIn else {
-            completion(GoogleError.unauthorized)
-            return
-        }
-        let parentId = "root"
-        let metadata = GTLRDrive_File()
-        metadata.name = folderName
-        metadata.mimeType = "application/vnd.google-apps.folder"
-        metadata.parents = [parentId]
-        
-        let query = GTLRDriveQuery_FilesCreate.query(withObject: metadata, uploadParameters: nil)
-        query.fields = "id"
-        
-        service.executeQuery(query) { (ticket, object, error) in
-            completion(error.map { GoogleError.failure($0.localizedDescription) })
-        }
-    }
-    
     func getFilesList(completion: @escaping MetaDataCompletion) {
         guard isSignedIn else {
             completion([], GoogleError.unauthorized)
@@ -115,8 +96,8 @@ extension DefaultGDriveService: GDriveService {
         }
         
         let query = GTLRDriveQuery_FilesList.query()
-        query.pageSize = 10
-        query.q = "'\(folderName)' in parents and mimeType = 'application/vnd.google-apps.folder'"
+        query.q = "'\(folderID)' in parents"
+        query.pageSize = 100
         
         service.executeQuery(query) { (ticket, result, error) in
             let fileList = result as? GTLRDrive_FileList
@@ -131,15 +112,15 @@ extension DefaultGDriveService: GDriveService {
             return
         }
         
-        let file = GTLRDrive_File()
-        file.name = file.name
-        file.parents = [folderName]
+        let googleFile = GTLRDrive_File()
+        googleFile.name = file
+        googleFile.parents = [folderID]
         
-        let params = GTLRUploadParameters(data: data, mimeType: MIMEType)
+        let params = GTLRUploadParameters(data: data, mimeType: "application/rtf")
         params.shouldUploadWithSingleRequest = true
         
         
-        let query = GTLRDriveQuery_FilesCreate.query(withObject: file, uploadParameters: params)
+        let query = GTLRDriveQuery_FilesCreate.query(withObject: googleFile, uploadParameters: params)
         query.fields = "id"
         
         service.executeQuery(query) { (ticket, file, error) in
@@ -167,6 +148,7 @@ extension DefaultGDriveService: GDriveService {
             completion(nil, GoogleError.unauthorized)
             return
         }
+        
         guard let fileID = file.identifier else {
             return completion(nil, GoogleError.failure("Missing file ID"))
         }
@@ -177,6 +159,48 @@ extension DefaultGDriveService: GDriveService {
             }
             
             completion(data, error.map { GoogleError.failure($0.localizedDescription) })
+        }
+    }
+    
+    func createFolderIfNeeded(folderName: String, completion: @escaping MetaDataCompletion) {
+        guard isSignedIn else {
+            completion([], GoogleError.unauthorized)
+            return
+        }
+        
+        let query = GTLRDriveQuery_FilesList.query()
+        query.pageSize = 100
+        
+        service.executeQuery(query) { (ticket, result, error) in
+            let fileList = result as? GTLRDrive_FileList
+            let files = fileList?.files ?? []
+            
+            if files.first(where: { $0.name == folderName}) == nil  {
+                self.createFolder(name: folderName) { error in
+                    completion([], error.map { GoogleError.failure($0.localizedDescription) })
+                }
+            }
+        }
+    }
+    
+    private func createFolder(name: String, completion: @escaping ErrorHandler) {
+        guard isSignedIn else {
+            completion(GoogleError.unauthorized)
+            return
+        }
+        
+        let parentId = "root"
+        let metadata = GTLRDrive_File()
+        metadata.name = folderName
+        metadata.mimeType = "application/vnd.google-apps.folder"
+        metadata.parents = [parentId]
+        
+        let query = GTLRDriveQuery_FilesCreate.query(withObject: metadata, uploadParameters: nil)
+        query.fields = "id"
+        
+        service.executeQuery(query) { (ticket, object, error) in
+            self.folderID = (object as? GTLRDrive_File)?.identifier ?? ""
+            completion(error.map { GoogleError.failure($0.localizedDescription) })
         }
     }
     

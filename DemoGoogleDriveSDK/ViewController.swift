@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction private func createAction(_ sender: Any) {
-        service.createFolder(name: "Calendars Attachments") { [weak self] error in
+        service.createFolderIfNeeded(folderName: "Calendars Attachments")  { [weak self] files, error in
             self?.show(error: error)
         }
     }
@@ -48,7 +48,7 @@ class ViewController: UIViewController {
         
         service.save(file: "TestFile",
                      data: file,
-                     MIMEType: "application/vnd.google-apps.folder",
+                     MIMEType: "application/vnd.google-apps.spreadsheet",
                      completion: { [weak self] error in
             self?.show(error: error)
         })
@@ -59,6 +59,7 @@ class ViewController: UIViewController {
             showAlert(with: "Nothing to delete")
             return
         }
+        
         service.delete(file: remoteTestFile) { [weak self] error in
             self?.show(error: error)
         }
@@ -71,6 +72,7 @@ class ViewController: UIViewController {
                 self?.showAlert(with: "No Files found")
                 return
             }
+            
             self?.showAlert(with: "Found files: \n" + files.compactMap({ $0.name }).joined(separator: "\n"))
             self?.remoteTestFile = files.first
         }
@@ -81,6 +83,7 @@ class ViewController: UIViewController {
             showAlert(with: "Nothing to delete")
             return
         }
+        
         service.download(file: remoteTestFile) { [weak self] data, error in
             self?.show(error: error)
             if let data = data {
