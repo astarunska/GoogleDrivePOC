@@ -179,6 +179,8 @@ extension DefaultGDriveService: GDriveService {
                 self.createFolder(name: folderName) { error in
                     completion([], error.map { GoogleError.failure($0.localizedDescription) })
                 }
+            } else {
+                self.folderID = files.first(where: { $0.name == folderName})?.identifier ?? ""
             }
         }
     }
