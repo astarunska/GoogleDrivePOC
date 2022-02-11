@@ -117,7 +117,7 @@ extension DefaultGDriveService: GDriveService {
         googleFile.name = file
         googleFile.parents = [folderID]
         
-        let params = GTLRUploadParameters(data: data, mimeType: "application/rtf")
+        let params = GTLRUploadParameters(data: data, mimeType: MIMEType)
         params.shouldUploadWithSingleRequest = true
         
         let query = GTLRDriveQuery_FilesCreate.query(withObject: googleFile, uploadParameters: params)
