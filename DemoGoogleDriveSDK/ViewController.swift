@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet private weak var showListButton: UIButton!
     
     private var remoteTestFile: GTLRDrive_File?
+    private var mimeType: String = .init()
     private let service: GDriveService = DefaultGDriveService(service: .init())
     
     override func viewDidLoad() {
@@ -48,7 +49,7 @@ class ViewController: UIViewController {
         
         service.save(file: "TestFile",
                      data: file,
-                     MIMEType: "application/vnd.google-apps.spreadsheet",
+                     MIMEType: "application/\(mimeType)",
                      completion: { [weak self] error in
             self?.show(error: error)
         })
@@ -80,7 +81,7 @@ class ViewController: UIViewController {
     
     @IBAction private func downloadAction(_ sender: Any) {
         guard let remoteTestFile = remoteTestFile else {
-            showAlert(with: "Nothing to delete")
+            showAlert(with: "Nothing to download")
             return
         }
         
@@ -104,6 +105,7 @@ class ViewController: UIViewController {
         guard let filePath = Bundle.main.url(forResource: "test_file123", withExtension: "rtf") else {
             return nil
         }
+        mimeType = filePath.pathExtension
         return try? Data(contentsOf: filePath)
     }
     

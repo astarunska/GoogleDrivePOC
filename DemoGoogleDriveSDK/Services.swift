@@ -28,8 +28,8 @@ protocol GDriveService {
 class DefaultGDriveService {
     
     private var service: GTLRDriveService
+    private var folderID: String = .init()
     private let folderName = "Calendars Attachments"
-    private var folderID = ""
     
     init(service: GTLRDriveService) {
         self.service = service
@@ -98,6 +98,7 @@ extension DefaultGDriveService: GDriveService {
         let query = GTLRDriveQuery_FilesList.query()
         query.q = "'\(folderID)' in parents"
         query.pageSize = 100
+        query.fields = "files(id, name, thumbnailLink)"
         
         service.executeQuery(query) { (ticket, result, error) in
             let fileList = result as? GTLRDrive_FileList
@@ -118,7 +119,6 @@ extension DefaultGDriveService: GDriveService {
         
         let params = GTLRUploadParameters(data: data, mimeType: "application/rtf")
         params.shouldUploadWithSingleRequest = true
-        
         
         let query = GTLRDriveQuery_FilesCreate.query(withObject: googleFile, uploadParameters: params)
         query.fields = "id"
